@@ -1,0 +1,6 @@
+{
+  "name": "Chicken Shop Management System",
+  "description": "An offline-first, production-ready ERP system for poultry shops, featuring real-time stock tracking in kg, sales billing, supplier purchases, customer credit ledgers (Udhaar), expense records, and reports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
