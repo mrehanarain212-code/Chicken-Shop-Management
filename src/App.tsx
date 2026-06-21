@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { Toaster } from 'react-hot-toast';
+import { Analytics } from '@vercel/analytics/react';
 import { 
   Building, 
   Scale, 
@@ -404,7 +405,7 @@ export default function App() {
 
       </main>
 
+      <Analytics />
     </div>
   );
 }
-
