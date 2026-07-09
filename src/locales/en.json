@@ -297,7 +297,9 @@
   "success_msg_exp": "Logged expenditure of {{amt}} in system ledger successfully!",
   "mortality_stock_alert": "Alert: Mortality weight ({{weight}} Kg) exceeds your current whole bird stock levels ({{stock}} Kg). Adjust inventory negative anyway?",
   "low_stock_threshold_alert": "Warning: Stock for {{name}} is low ({{remaining}} Kg remaining).",
-  "reports_pl": "Profit & Loss Reports"
+  "reports_pl": "Profit & Loss Reports",
+  "version_label": "V1.0.2 Stable",
+  "app_footer_description": "Designed for micro and small scale breeding broiler business units."
 }
 
 

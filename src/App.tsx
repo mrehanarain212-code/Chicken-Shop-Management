@@ -269,6 +269,7 @@ export default function App() {
                   onClick={() => {
                     setActiveTab(link.id as ActiveTab);
                     setMobileMenuOpen(false);
+                    window.history.pushState(null, '', `/${link.id}`);
                   }}
                   className={`
                     w-full py-3 px-3.5 text-xs font-semibold rounded-xl flex items-center justify-between transition cursor-pointer font-sans
@@ -301,14 +302,14 @@ export default function App() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-1.5 uppercase font-bold tracking-widest text-[9px]">
               <Sparkles className="w-3.5 h-3.5 text-indigo-400" />
-              V1.0.2 Stable
+              {t('version_label')}
             </div>
             <div 
               className={`w-2 h-2 rounded-full ${syncStatus === 'synced' ? 'bg-emerald-500' : 'bg-rose-500'}`} 
               title={`Data Status: ${syncStatus}`} 
             />
           </div>
-          <p className="leading-snug">Designed for micro and small scale breeding broiler business units.</p>
+          <p className="leading-snug">{t('app_footer_description')}</p>
         </div>
 
       </aside>
