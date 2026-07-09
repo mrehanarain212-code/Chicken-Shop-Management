@@ -187,7 +187,7 @@ export default function Backup({
         {/* Left column Settings preferences */}
         <div className="md:col-span-7 bg-white rounded-2xl border border-slate-100 p-5 shadow-sm space-y-4">
           <h3 className="text-xs font-bold uppercase tracking-wider text-slate-600 flex items-center gap-1">
-            <Building className="w-4 h-4 text-slate-400" /> Store Profile Metadata
+            <Building className="w-4 h-4 text-slate-400" /> {t('store_profile_metadata')}
           </h3>
 
           <form onSubmit={handleUpdateStoreDetails} className="space-y-4 font-sans" id="store_meta_form">
@@ -243,7 +243,7 @@ export default function Backup({
             </div>
 
             <div className="space-y-1">
-              <label className="text-[10px] font-bold text-slate-400 uppercase">Shop Display Title Header</label>
+              <label className="text-[10px] font-bold text-slate-400 uppercase">{t('shop_display_title')}</label>
               <input 
                 type="text" 
                 value={shopName}
@@ -254,7 +254,7 @@ export default function Backup({
             </div>
 
             <div className="space-y-1">
-              <label className="text-[10px] font-bold text-slate-400 uppercase font-bold">Physical Market Address</label>
+              <label className="text-[10px] font-bold text-slate-400 uppercase font-bold">{t('physical_market_address')}</label>
               <input 
                 type="text" 
                 value={shopAddress}
@@ -266,7 +266,7 @@ export default function Backup({
 
             <div className="grid grid-cols-2 gap-3">
               <div className="space-y-1">
-                <label className="text-[10px] font-bold text-slate-400 uppercase flex items-center gap-0.5"><Phone className="w-3.5 h-3.5" /> Mobile Contact No</label>
+                <label className="text-[10px] font-bold text-slate-400 uppercase flex items-center gap-0.5"><Phone className="w-3.5 h-3.5" /> {t('mobile_contact_no')}</label>
                 <input 
                   type="text" 
                   value={shopPhone}
@@ -276,7 +276,7 @@ export default function Backup({
               </div>
 
               <div className="space-y-1">
-                <label className="text-[10px] font-bold text-slate-400 uppercase flex items-center gap-0.5"><Coins className="w-3.5 h-3.5" /> Currency Symbol</label>
+                <label className="text-[10px] font-bold text-slate-400 uppercase flex items-center gap-0.5"><Coins className="w-3.5 h-3.5" /> {t('currency_symbol')}</label>
                 <input 
                   type="text" 
                   value={currencySymbol}
@@ -291,7 +291,7 @@ export default function Backup({
               className="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl text-xs font-bold transition shadow-sm cursor-pointer"
               id="btn_save_settings"
             >
-              Commit Metadata Update
+              {t('commit_metadata_update')}
             </button>
 
           </form>
@@ -302,34 +302,34 @@ export default function Backup({
           
           {/* Connection status sandbox */}
           <div className="bg-white rounded-2xl border border-slate-100 p-5 shadow-sm space-y-3">
-            <h3 className="text-xs font-bold uppercase tracking-wider text-slate-650 text-slate-600">Container Sandbox Connection</h3>
+            <h3 className="text-xs font-bold uppercase tracking-wider text-slate-650 text-slate-600">{t('container_sandbox_conn')}</h3>
             
             <div className="flex items-center justify-between">
-              <span className="text-xs font-medium text-slate-500">Local Environment Status:</span>
+              <span className="text-xs font-medium text-slate-500">{t('local_env_status')}</span>
               {isOnline ? (
                 <span className="bg-emerald-50 border border-emerald-250 border-emerald-200 text-emerald-800 px-3 py-1 rounded-xl text-[10px] font-extrabold uppercase tracking-wide flex items-center gap-1">
-                  <Wifi className="w-3.5 h-3.5 text-emerald-600" /> Online Network Access
+                  <Wifi className="w-3.5 h-3.5 text-emerald-600" /> {t('online_network_access')}
                 </span>
               ) : (
                 <span className="bg-amber-50 border border-amber-250 border-amber-200 text-amber-800 px-3 py-1 rounded-xl text-[10px] font-extrabold uppercase tracking-wide flex items-center gap-1 flex animate-pulse">
-                  <WifiOff className="w-3.5 h-3.5 text-amber-600" /> Offline Mode Active
+                  <WifiOff className="w-3.5 h-3.5 text-amber-600" /> {t('offline_mode_active')}
                 </span>
               )}
             </div>
 
             <p className="text-[11px] text-slate-455 text-slate-400 leading-relaxed pt-1.5 border-t border-slate-50 font-medium">
-              Poultry system runs on a 100% Client-Side database engine. Transactions write to secure local containers and will remain completely accessible even if the internet access fails.
+              {t('db_engine_desc')}
             </p>
           </div>
 
           {/* Backup modules */}
           <div className="bg-white rounded-2xl border border-slate-100 p-5 shadow-sm space-y-4">
             <h3 className="text-xs font-bold uppercase tracking-wider text-slate-600 flex items-center gap-1">
-              <Database className="w-4 h-4 text-indigo-500" /> Accounting Backups Data Center
+              <Database className="w-4 h-4 text-indigo-500" /> {t('accounting_backups_center')}
             </h3>
 
             <p className="text-[11px] text-slate-500 leading-relaxed font-semibold">
-              Export accounting lists and credit ledgers as structured JSON configuration packages to lock shop audits.
+              {t('export_backups_desc')}
             </p>
 
             <div className="grid grid-cols-1 gap-2 pt-1 font-sans">
@@ -341,7 +341,7 @@ export default function Backup({
                 id="btn_export_db"
               >
                 <span className="flex items-center gap-2">
-                  <Download className="w-4 h-4 text-emerald-600" /> Download Secure Backup (.json)
+                  <Download className="w-4 h-4 text-emerald-600" /> {t('download_secure_backup')}
                 </span>
               </button>
 
@@ -351,7 +351,7 @@ export default function Backup({
                 id="lbl_import_db"
               >
                 <span className="flex items-center gap-2">
-                  <Upload className="w-4 h-4 text-indigo-600" /> Upload Restore Ledger Backup
+                  <Upload className="w-4 h-4 text-indigo-600" /> {t('upload_restore_ledger')}
                 </span>
                 <input 
                   type="file" 
@@ -369,7 +369,7 @@ export default function Backup({
                 id="btn_reset_db"
               >
                 <span className="flex items-center gap-2">
-                  <RotateCcw className="w-4 h-4 text-rose-600" /> Factory Reset Demo Seeds
+                  <RotateCcw className="w-4 h-4 text-rose-600" /> {t('factory_reset_demo')}
                 </span>
               </button>
 

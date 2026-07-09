@@ -296,7 +296,23 @@
   "outflow_desc": "ہیلپر کی تنخواہیں، دکان کا کرایہ، یوٹیلیٹیز، فیڈ اسٹاک، اور پولٹری کی اموات کے نقصانات درج کریں۔",
   "register_outflow_receipt": "آؤٹ فلو رسید رجسٹر کریں",
   "low_stock_threshold_alert": "خبردار: {{name}} کا اسٹاک کم ہے ({{remaining}} کلو باقی ہے)۔",
-  "reports_pl": "نفع و نقصان کی رپورٹس"
+  "reports_pl": "نفع و نقصان کی رپورٹس",
+  "store_profile_metadata": "اسٹور پروفائل میٹا ڈیٹا",
+  "shop_display_title": "دکان کا نام / عنوان",
+  "physical_market_address": "دکان کا پتہ",
+  "mobile_contact_no": "موبائل نمبر",
+  "currency_symbol": "کرنسی کی علامت",
+  "commit_metadata_update": "سیٹنگز محفوظ کریں",
+  "container_sandbox_conn": "کنٹینر سینڈ باکس کنکشن",
+  "local_env_status": "لوکل انوائرمنٹ اسٹیٹس:",
+  "online_network_access": "آن لائن نیٹ ورک رسائی",
+  "offline_mode_active": "آف لائن موڈ فعال",
+  "db_engine_desc": "پولٹری سسٹم 100% کلائنٹ سائیڈ ڈیٹا بیس انجن پر چلتا ہے۔ ٹرانزیکشنز محفوظ لوکل کنٹینرز میں لکھی جاتی ہیں اور انٹرنیٹ نہ ہونے کی صورت میں بھی مکمل طور پر قابل رسائی رہیں گی۔",
+  "accounting_backups_center": "اکاؤنٹنگ بیک اپس ڈیٹا سینٹر",
+  "export_backups_desc": "اکاؤنٹنگ لسٹس اور کریڈٹ لیجرز کو سٹرکچرڈ JSON کنفیگریشن پیکجز کے طور پر ایکسپورٹ کریں۔",
+  "download_secure_backup": "محفوظ بیک اپ ڈاؤن لوڈ کریں (.json)",
+  "upload_restore_ledger": "لیجر بیک اپ اپ لوڈ کریں",
+  "factory_reset_demo": "فیکٹری ری سیٹ ڈیمو سیڈز"
 }
 
 

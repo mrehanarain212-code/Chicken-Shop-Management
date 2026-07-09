@@ -25,6 +25,7 @@ import {
   LocalDB 
 } from '../types';
 import { safeConfirm } from '../utils/safeConfirm';
+import EmptyState from './EmptyState';
 
 interface LedgerProps {
   customers: Customer[];
@@ -334,7 +335,7 @@ export default function Ledger({
                 );
               })}
               {filteredCustomers.length === 0 && (
-                <p className="text-center py-6 text-slate-400 italic text-xs">No customer accounts found.</p>
+                <EmptyState message={t('no_registered_ledger')} />
               )}
             </div>
           </div>
@@ -535,7 +536,7 @@ export default function Ledger({
                 );
               })}
               {filteredSuppliers.length === 0 && (
-                <p className="text-center py-6 text-slate-400 italic text-xs">No supplier accounts found.</p>
+                <EmptyState message={t('no_breeding_vendors')} />
               )}
             </div>
           </div>
@@ -646,12 +647,12 @@ export default function Ledger({
                               {l.description}
                             </td>
                             <td className="py-3 text-right font-mono font-bold text-emerald-600">
-                              {l.type === 'debit' ? `-${settings.currencySymbol}${l.amount.toFixed(0)}` : ''}
+                              {l.type === 'debit' ? `${settings.currencySymbol}${l.amount.toFixed(0)}` : ''}
                             </td>
                             <td className="py-3 text-right font-mono font-bold text-indigo-600">
-                              {l.type === 'credit' ? `+${settings.currencySymbol}${l.amount.toFixed(0)}` : ''}
+                              {l.type === 'credit' ? `${settings.currencySymbol}${l.amount.toFixed(0)}` : ''}
                             </td>
-                            <td className="py-3 text-right font-mono font-semibold text-slate-905 font-medium text-slate-900">
+                            <td className="py-3 text-right font-mono font-semibold text-slate-900">
                               {settings.currencySymbol} {l.balanceAfter.toLocaleString('en-IN')}
                             </td>
                           </tr>

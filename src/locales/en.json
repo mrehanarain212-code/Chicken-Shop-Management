@@ -299,7 +299,23 @@
   "low_stock_threshold_alert": "Warning: Stock for {{name}} is low ({{remaining}} Kg remaining).",
   "reports_pl": "Profit & Loss Reports",
   "version_label": "V1.0.2 Stable",
-  "app_footer_description": "Designed for micro and small scale breeding broiler business units."
+  "app_footer_description": "Designed for micro and small scale breeding broiler business units.",
+  "store_profile_metadata": "Store Profile Metadata",
+  "shop_display_title": "Shop Display Title Header",
+  "physical_market_address": "Physical Market Address",
+  "mobile_contact_no": "Mobile Contact No",
+  "currency_symbol": "Currency Symbol",
+  "commit_metadata_update": "Commit Metadata Update",
+  "container_sandbox_conn": "Container Sandbox Connection",
+  "local_env_status": "Local Environment Status:",
+  "online_network_access": "Online Network Access",
+  "offline_mode_active": "Offline Mode Active",
+  "db_engine_desc": "Poultry system runs on a 100% Client-Side database engine. Transactions write to secure local containers and will remain completely accessible even if the internet access fails.",
+  "accounting_backups_center": "Accounting Backups Data Center",
+  "export_backups_desc": "Export accounting lists and credit ledgers as structured JSON configuration packages to lock shop audits.",
+  "download_secure_backup": "Download Secure Backup (.json)",
+  "upload_restore_ledger": "Upload Restore Ledger Backup",
+  "factory_reset_demo": "Factory Reset Demo Seeds"
 }
 
 
