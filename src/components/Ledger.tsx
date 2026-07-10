@@ -452,10 +452,10 @@ export default function Ledger({
                               {l.description}
                             </td>
                             <td className="py-3 text-right font-mono font-bold text-rose-600">
-                              {l.type === 'debit' ? `+${settings.currencySymbol}${l.amount.toFixed(0)}` : ''}
+                              {l.type === 'debit' ? `${settings.currencySymbol}${l.amount.toFixed(0)}` : ''}
                             </td>
                             <td className="py-3 text-right font-mono font-bold text-emerald-600">
-                              {l.type === 'credit' ? `-${settings.currencySymbol}${l.amount.toFixed(0)}` : ''}
+                              {l.type === 'credit' ? `${settings.currencySymbol}${l.amount.toFixed(0)}` : ''}
                             </td>
                             <td className="py-3 text-right font-mono font-semibold text-slate-900">
                               {settings.currencySymbol} {l.balanceAfter.toLocaleString('en-IN')}

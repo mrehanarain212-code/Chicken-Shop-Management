@@ -236,7 +236,6 @@ export default function App() {
               )}
               <div>
                 <h1 className="text-xs font-black tracking-widest text-white uppercase leading-snug">{settings.shopName}</h1>
-                <span className="text-[9px] text-emerald-450 text-indigo-300/80 font-bold uppercase tracking-wide">{t('poultry_erp')}</span>
               </div>
             </div>
             

@@ -297,6 +297,7 @@
   "register_outflow_receipt": "آؤٹ فلو رسید رجسٹر کریں",
   "low_stock_threshold_alert": "خبردار: {{name}} کا اسٹاک کم ہے ({{remaining}} کلو باقی ہے)۔",
   "reports_pl": "نفع و نقصان کی رپورٹس",
+  "checkout_bill_total": "کل بل",
   "store_profile_metadata": "اسٹور پروفائل میٹا ڈیٹا",
   "shop_display_title": "دکان کا نام / عنوان",
   "physical_market_address": "دکان کا پتہ",
