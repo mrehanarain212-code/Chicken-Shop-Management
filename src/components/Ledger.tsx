@@ -659,8 +659,8 @@ export default function Ledger({
                         ))}
                         {activeSuppLedger.length === 0 && (
                           <tr>
-                            <td colSpan={5} className="text-center py-8 text-slate-405 italic">
-                              {t('no_supp_ledger_history')}
+                            <td colSpan={5} className="text-center py-8">
+                              <EmptyState message={t('no_supp_ledger_history')} />
                             </td>
                           </tr>
                         )}
